@@ -2,7 +2,7 @@
 <!-- NOTE: the string 'TODO' appears everywhere you need to fill in information. -->
 <html>
 <head>
-<title>TODO:Title For Your Game</title>
+<title>Pacman Herder</title>
 <!-- NOTE: this CSS sets up the ".figure" class to center images, and instructs images in ".figure"s to have space around them and to render crisp pixel edges when scaled [e.g. for retina displays]. -->
 <style>
 .figure {
@@ -15,25 +15,42 @@
 </style>
 </head>
 <body>
-<h1>TODO: Title For Your Game</h1>
-<p>TODO: one-sentence summary of your game, highlighting the unique "hook" of the game.</p>
+<h1>Pacman Herder</h1>
+
+<p>Pacman and extreme herder (neopets) mashup, using the pacman game setting with the added difficulty of having to round up creatures into the central pen.</p>
+
 <!-- the <div> wrapping this image centers it on the page. -->
 <!-- TODO: drawing showing the main view of the game during play -->
 <div class="figure">
-<img src="game.png" />
+<img src="pacman_screenshot.png" style="width:200px;"/>
+<img src="extreme_herder_screenshot.png" style="width:300px;" />
+<p> Screenshots of pacman and neopets: extreme herder, respectively </p>
 </div>
-<p>TODO: more information (2-3 sentences) about gameplay, referring to the image above.</p>
+
+<p>The ghosts in pacman do not interact with the creatures that pacman has to save (they simply pass through each other, or the ghosts pass thtough the creature really). The creature and the ghosts move at different speeds (to ensure the ghosts don't always fly directly on top of a creature), with the ghosts (generally) moving faster than the creatures.</p>
 
 <h2>Gameplay</h2>
-<p>TODO: Describe how the game starts, plays (e.g. what are the controls), and ends.</p>
+<p>The game starts the same way as pacman, with an additional n (increases with difficulty, maybe start with 5) number of creatures randomly spawned across the board. The central pen holding the ghosts has openings in all 4 cardinal directions, and the ghosts exit the same way as in pacman, using the north opening. The pacman character moves using the same arrow key controls, with an additional space bar key used to "pick up" a creature, when it is in pacman's vicinity. It can be used to swap out the character that the pacman is currently holding. The pacman needs to go to one of the four openings in the central pen to feed the creature into it. After a set amount of time of being inside the pen, the creature will escape out again. The level ends when all dots are eaten, and all creatures are in the central pen.</p>
+<p><b>Levels get harder:</b> more creatures are spawned, and since creatures can escape once being round up, this makes it more challenging. </p>
+
+<p><b>Variety:</b> power-ups, unique creature movements </p>
 <!-- TODO: illustrate your descriptions with more drawings -->
 <div class="figure">
-<img src="before-reset.png" />
-<img src="after-reset.png" />
+<img src="instruction1.png" />
+<img src="instruction2.png" />
 </div>
 
 <h2>Assets</h2>
 <p>TODO: Provide a link to any preliminary 3D models, sounds, or <a href="https://github.com/ixchow/amoeba-escape/blob/master/tiles.png">textures</a> for the game. Make sure to only link to assets with appropriate licenses.</p>
 
+<div class="figure">
+<img src="background.png" />
+<img src="pacman_asset.png" style = "width:200px;"/>
+<img src="creatures.png" />
+</div>
+
+
+<p>Pacman sprites from: https://www.spriters-resource.com/arcade/pacman/ </p>
+<p>Creature sprites from: https://opengameart.org/content/platformer-baddies/ </p>
 </body>
 </html>
